@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Website Deployment</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #101827;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: #172b4d;
+            padding: 25px;
+        }
+        main {
+            padding: 70px 20px;
+        }
+        h1 { color: #38bdf8; }
+        p { font-size: 18px; }
+        button {
+            padding: 12px 25px;
+            background: #0ea5e9;
+            color: white;
+            border: 0;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>My Cloud Project</h2>
+    </header>
+    <main>
+        <h1>Automated Website Deployment</h1>
+        <p>Real-Time Server Monitoring & Alerting System</p>
+        <p>Website hosted successfully using AWS EC2.</p>
+        <button onclick="showMessage()">Click Here</button>
+        <p id="message"></p>
+    </main>
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText =
+                "Welcome! Website is running successfully.";
+        }
+    </script>
+</body>
+</html>
